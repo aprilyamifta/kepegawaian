@@ -11,7 +11,8 @@ class Cece extends CI_Controller
     public function index()
     {
         echo "halohaiiiiiiiiiiiiiiiiiiiiiiiiiii";
-        echo "cecececes"
+        echo "cecececes";
+        echo "willyy";
     }
 
 }
