@@ -13,6 +13,7 @@ class Cece extends CI_Controller
         echo "halohaiiiiiiiiiiiiiiiiiiiiiiiiiii";
         echo "cecececes";
         echo "willyy";
+        echo "hehe";
     }
 
 }
