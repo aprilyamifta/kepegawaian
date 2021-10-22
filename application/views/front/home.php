@@ -94,6 +94,42 @@
                 </div>
             </div>
         </div>
+        <div class="col-xl-7"></div>
+        <div class="col-xl-5">
+            <div class="card mb-4">
+                <div class="card-header text-center"><span class="fas fa-clock mr-1"></span>Kinerja</div>
+                <div class="card-body text-center">
+                    <div id="infoabsensi"></div>
+                    <?php if ($dataapp['maps_use'] == 1) : ?>
+                        <div id='maps-absen' style='width: 100%; height:250px;'></div>
+                        <hr>
+                    <?php endif; ?>
+                    <div id="location-maps" style="display: none;"></div>
+                    <div id="date-and-clock">
+                        <h3 id="clocknow"></h3>
+                        <h3 id="datenow"></h3>
+                    </div>
+                    <form action="<?= base_url('/user/inputkinerja') ?>" method="POST" enctype="multipart/form-data" id="form-kinerja">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="form-group">
+                                <textarea class="form-control" name="mengerjakan" id="mengerjakan" rows="3" wrap="hard" placeholder="Isi Jika Mengerjakan Sesuatu"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <button type="submit" class="btn btn-dark" id="btn-kinerja">Submit Kinerja</button>
+                    </div>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <!-- <div class="d-flex align-items-center justify-content-between">
+                        <div class="text-muted">Absen Datang Jam: <?= $dataapp['absen_mulai'] ?></div>
+                        <div class="text-muted">Absen Pulang Jam: <?= $dataapp['absen_pulang']; ?></div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 

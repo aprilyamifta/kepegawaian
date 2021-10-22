@@ -58,6 +58,7 @@ $route['settingapp'] = 'admin/settingapp';
 $route['dashboard'] = 'admin/dashboard';
 $route['datapegawai'] = 'admin/datapegawai';
 $route['absensi'] = 'admin/absensi';
+$route['kinerja'] = 'admin/kinerja';
 
 //User URL
 $route['setting'] = 'user/setting';

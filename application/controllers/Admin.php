@@ -78,4 +78,20 @@ class Admin extends CI_Controller
         $this->load->view('admin/absenpegawai', $data);
         $this->load->view('layout/footer', $data);
     }
+
+    public function kinerja()
+    {
+        $data = [
+            'title' => 'Kinerja Pegawai',
+            'user' => $this->get_datasess,
+            'dataapp' => $this->get_datasetupapp
+        ];
+
+        $data['kinerjaku'] = $this->db->get('db_kinerja')->result();
+        $this->load->view('layout/header', $data);
+        $this->load->view('layout/navbar', $data);
+        $this->load->view('layout/sidebar', $data);
+        $this->load->view('user/kinerja', $data);
+        $this->load->view('layout/footer', $data);
+    }
 }

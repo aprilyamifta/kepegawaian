@@ -468,7 +468,7 @@
         });
     </script>
 
-    <script>
+<!--     <script>
         $("#refresh-tabel-kinerja").click(function(e) {
             e.preventDefault();
             load_process();
@@ -489,7 +489,7 @@
                 $('td:eq(0)', row).html();
             }
         });
-    </script>
+    </script> -->
 
 
     <?php if ($this->session->userdata('role_id') == 1) : ?>
